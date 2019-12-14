@@ -10,8 +10,8 @@ const sortByOptions = {
 class SearchBar extends React.Component {
     renderSortByOptions() {
         return Object.keys(sortByOptions).map(sortByOption => {
-            let sortByOptionValue = sortByOptions[sortByOption]; <
-            li key = {
+            let sortByOptionValue = sortByOptions[sortByOption];
+            return <li key = {
                 sortByOptionValue
             } > {
                 sortByOption
@@ -27,22 +27,21 @@ class SearchBar extends React.Component {
             <
             ul > {
                 this.renderSortByOptions()
-            } <
-            /ul> < /
-            div > <
+            } < /ul>  <
+            /div >  <
             div className = "SearchBar-fields" >
             <
             input placeholder = "Search Businesses" / >
             <
             input placeholder = "Where?" / >
             <
-            /div> <
+            /div>  <
             div className = "SearchBar-submit" >
             <
-            a > Let 's Go</a> < /
-            div > <
+            a > Let 's Go</a>  <
+            /div>  <
             /div>
-        )
+        );
     }
 }
 

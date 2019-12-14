@@ -41,8 +41,8 @@ class Business extends React.Component {
                 business.state
             } {
                 business.zipCode
-            } < /p> <
-            /div> <
+            } < /p> < /
+            div > <
             div className = "Business-reviews" >
             <
             h3 > {
@@ -55,10 +55,10 @@ class Business extends React.Component {
             p > {
                 business.reviewCount
             }
-            reviews < /p> <
-            /div> <
-            /div> <
-            /div>,
+            reviews < /p> < /
+            div > <
+            /div> < /
+            div >
 
         )
     }
