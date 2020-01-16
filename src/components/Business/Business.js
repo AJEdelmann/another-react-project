@@ -2,9 +2,20 @@ import React from "react";
 import "./Business.css";
 
 class Business extends React.Component {
+  // constructor(props) {
+  //   super(props);
+
+  //   this.geoLocation = this.geoLocation.bind(this);
+  // }
+  // geoLocation(place) {
+  //   return `https://maps.google.com/?q=${place}`;
+  // }
+
   render() {
     const { business } = this.props;
     return (
+      // https://maps.google.com/?q=term
+
       <div className="Business">
         <div className="image-container">
           <img src={business.imageSrc} alt="" />
